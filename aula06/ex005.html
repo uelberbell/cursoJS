@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de cadastro</title>
+
+    <style>
+        body{
+            background-color: rgb(29, 27, 27);
+            font: 14pt arial; color:whitesmoke;
+        }
+
+        h1{
+            color: rgb(152, 223, 47);
+        }
+
+        p{
+            font: 16pt arial; color: rgb(214, 51, 179);
+        }
+        
+    </style>
+</head>    
+
+<body>
+<h1>Bem vindo!</h1>
+<p>Seus dados foram cadastrados com sucesso!</p>  
+
+    <script>//Aqui estamos trabalhando JS com as funcionalidades, e capturando dados do usuário
+        window.alert('Olá, bem vindo ao cadastro na lista do bellguitar!')
+        var nome = window.prompt('Qual o seu nome? ')
+        var idade = Number(window.prompt('Qual a sua idade? '))
+        var email = window.prompt('Qual o seu e-mail? ')
+        var cidade = window.prompt('Qual a sua cidade? ')
+        //Aqui estamos jogando as informações captadas no corpo do site
+        document.write(`O seu nome é: <strong>${nome}</strong><br/>`)// O comando <strong></strong> deixa a fonte em negrito.
+        document.write(`Você tem: <strong>${idade}</strong> anos!<br/>`)// O comando <br/> faz uma quebra de linha.
+        /*if (idade >= 30){
+            document.write('<br/>hahahaha! Ta ficando velho, querido(a)!<br/>')
+        }*/
+        document.write(`O seu e-mail é: <strong>${email}</strong><br/>`)
+        document.write(`Você mora na Cidade: <strong>${cidade}</strong><br/>`)
+    </script>
+</body>
+</html>
