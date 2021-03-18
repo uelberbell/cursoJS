@@ -14,23 +14,31 @@
             h1{
                 color: greenyellow
             }
-
-
     </style>
-
-
-
 </head>
 <body>
 
-    <h1>Bem vindo a tela de Login!</h1>
+    <h1>Bem vinvo ao CALCMEDIA!</h1>
     <script>
-        window.alert('Isso é só um teste!')
-        var media = window.prompt('Qual a sua média?')
-        document.write('Você diagitou a <strong>Média:</strong> ' + media + ', ' )
-
-            document.write(media > 5? '<strong>APROVADO</strong>' : '<strong>REPROVADO</strong>')
+        window.alert('Bem vindo ao teste de APROVAÇÃO!')
+        var nota1 = Number.parseFloat(window.prompt('Nota 1'))
+        var nota2 = Number.parseFloat(window.prompt('Nota 2'))
+        var nota3 = Number.parseFloat(window.prompt('Nota 3'))
+        var nota4 = Number.parseFloat(window.prompt('Nota 4'))
+        var soma = nota1 + nota2 + nota3 + nota4
+        document.write('Total de pontos das notas: ' + soma + '<br/>')
+        var media = 0.0
+        media = (soma / 4)
+            
+        document.write('<br/>Nota <strong>primeira</strong> prova: ' +  nota1.toFixed(2).replace(',' , '.') + '<br/>')   
+        document.write('Nota <strong>segunda</strong> prova: ' +  nota2.toFixed(2).replace(',' , '.') + '<br/>') 
+        document.write('Nota <strong>terceira</strong> prova: ' +  nota3.toFixed(2).replace(',' , '.') + '<br/>') 
+        document.write('Nota <strong>quarta</strong> prova: ' +  nota4.toFixed(2).replace(',' , '.')+ '<br/>')      
+        document.write('<br/>Sua <strong>Média:</strong> ' + media.toFixed(2) + ' ' )
+        document.write(media >= 7? '<strong>(APROVADO)</strong>' : '<strong>(REPROVADO)</strong>')
        
+                    
+            
     </script>
     
 </body>
