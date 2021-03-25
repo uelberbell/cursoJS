@@ -4,13 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Primeiros Passos com o DOM</title>
+    <title>Primeiros Passos com DOM</title>
 
     <style>
        body{
-           background: rgb(85, 166, 204);
+           background: rgb(34, 69, 85);
            color: white;
            font: normal 18pt arial;
+       }
+       h1{
+           background-color: purple; 
        }
     </style>
 
@@ -21,10 +24,14 @@
     <p>Aprendendo a usar o <strong>DOM</strong> em javascript.</p>
     <div>Clique em mim</div>
     <script>
+        
+        var corpo2 = window.document.h1
         var corpo = window.document.body
-        var p1 = window.document.getElementsByTagName('p')[1]
+        var p1 = window.document.getElementsByTagName('p')[0]
         window.document.write('Está escrito assim: ' + p1.innerHTML)
         p1.style.background = 'purple'
+        
+
            
     </script>
 </body>
