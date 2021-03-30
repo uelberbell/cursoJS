@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+
+    <style>
+        body{
+            background-color: rgb(218, 218, 72);
+        }
+        h1{
+            font: normal 22pt arial;
+          }
+         input{
+             font: normal 15pt arial;
+             
+         }
+         p1{
+             background-color: green;
+             font: normal 15pt arial;
+             border: 1px solid
+         } 
+    </style>
+</head>
+<body>
+    <h1>Conferência de Nacionalidade</h1>
+    
+    <p1>Digite a sua nacionalidade aqui </p1><input type="text" id="nac">
+    <input type="button" value="Conferir" onclick="conferir();">
+    <div id="resultado">
+        <script>
+            function conferir(){
+                var nacio = document.querySelector("input#nac")
+                var res = document.querySelector("div#resultado") // Essa variável "res" serve para jogar o valor dentro da DIV acima para que possa ser escrita no corpo do site.
+                var nac = String(nacio.value)
+                if(nac != "Brasil" && nac != "Brasileiro"){
+                    res.innerHTML = `<p>Lamentamos mas você é do(a): <strong>${nac}</strong> e não pode entrar no <strong>BRASIL</strong></p>`
+                }
+                else{
+                    res.innerHTML = `<p>Bem vindo ao <strong>BRASIl</strong>, pois você tem nacionalidade: <strong>${nac}</strong</p>`
+                }
+                
+            }
+
+        </script>
+    
+</body>
+</html>
