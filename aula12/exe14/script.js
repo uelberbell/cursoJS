@@ -22,7 +22,7 @@ function carregar(){
         msg2.innerHTML = 'Boa noite!'
         }
 }
-   /* var acao = document.getElementById("area")
+    var acao = document.getElementById("area")
     acao.addEventListener("mouseenter", entra)
     acao.addEventListener("mouseout", sair)
 function entra(){
@@ -31,6 +31,6 @@ function entra(){
 function sair(){
     acao.style.backgroundColor = '#ABD1B5'
 }
-*/
+
 
 

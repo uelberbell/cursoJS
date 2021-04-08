@@ -17,6 +17,8 @@ section{
 div{
     text-align: center;
     padding: 8px;
+    width: 250px;
+    margin: auto;
 }
 footer{
     text-align: center;
