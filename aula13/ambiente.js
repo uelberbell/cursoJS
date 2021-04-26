@@ -1,7 +1,7 @@
 
 var c = 1
 do{ //faça:
-    console.log(`Passo ${c}`)
+    console.log(`Zed é gay ${c} vezes`)
     c++ // Importante sempre acrescentar um ++(mais 1) para que o looping não fique infinito.
     
 }while( c <= 20) // Enquanto c for menor igual a 10
