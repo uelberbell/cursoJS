@@ -1,6 +1,0 @@
-    let valor = 0
-    for (let cont =0; valor <=100 ; cont++){
-        console.log(`${cont}`)
-    }
-
-
