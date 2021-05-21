@@ -1,0 +1,28 @@
+body {
+    text-align: center;
+    margin: auto;
+    padding: 10px;
+    font: normal 12pt arial;
+  }
+  
+  footer {
+    text-align: center;
+    font: italic 12pt arial;
+  }
+  
+  section {
+    background: grey;
+    width: 500px;
+    height: 400px;
+    padding: 10px;
+    position: center;
+    margin: auto;
+    border-radius: 5px;
+  }
+  
+  select {
+    width: 250px;
+    
+  
+  }
+  
