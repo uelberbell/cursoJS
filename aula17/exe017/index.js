@@ -52,10 +52,11 @@ function verificar(){
             if(valores[pos] < menor)
                 menor = valores[pos]  
         }
+        res.innerHTML ='' // Sempre limpar antes de adicionar novos resultados!
             media += soma /5
         res.innerHTML += `O Total de valores adiconado é de <strong>${total}</strong><br>`// Length usamos para pegar o tamanho do array. Strong deixamos em negrito
-        res.innerHTML += `O total dos valores somados é: ${soma}<br>`
-        res.innerHTML += `A mádia dos valores é: ${media}<br>` 
+        res.innerHTML += `O total dos valores somados é: <strong>${soma}</strong><br>`
+        res.innerHTML += `A mádia dos valores é: <strong>${media}</strong><br>` 
         res.innerHTML += `O maior valor adicionado na lista É: <strong>${maior}</strong><br>`
         res.innerHTML += `O menor valor adicionado na lista é: <strong>${menor}</strong>`
     

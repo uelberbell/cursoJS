@@ -8,4 +8,4 @@ hipertrofia(h = 0){
     }
 }
 amigo.hipertrofia(7)
-console.log(`${amigo.nome} pesa ${amigo.peso}Kg`)
+console.log(`${amigo.nome} pesa ${amigo.peso}Kg, é do sexo ${amigo.sexo} e tem ${amigo.idade} anos de idade`)
